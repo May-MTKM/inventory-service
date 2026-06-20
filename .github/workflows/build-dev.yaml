@@ -48,12 +48,12 @@ jobs:
           file: ./deployment/Dockerfile.dev
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: ghcr.io/May-MTKM/inventory-service:${{ steps.tag-version.outputs.version }}
+          tags: ghcr.io/may-mtkm/inventory-service:${{ steps.tag-version.outputs.version }}
 
       # - name: Checkout Kustomize chart Repository
       #   uses: actions/checkout@v3
       #   with:
-      #     repository: May-MTKM/workshop-apps
+      #     repository: may-mtkm/workshop-apps
       #     path: deployment
       #     token: ${{ secrets.MY_GITHUB_TOKEN }}
 
